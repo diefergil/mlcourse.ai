@@ -6,9 +6,8 @@ authors = ["Yury Kashnitsky <yury.kashnitsky@gmail.com>"]
 license = "CC BY-NC-SA 4.0"
 
 [tool.poetry.dependencies]
-python = ">=3.8,<3.12"
+python = ">=3.9,<3.12"
 eli5 = "0.11.0"
-holidays = "0.24" # bugs in Prophet with later versions
 ipywidgets = "^8.0.6"
 jupyter = "^1.0.0"
 jupyter-book = "^0.15.1"
@@ -17,7 +16,6 @@ numpy = "^1.24.3"
 pandas = "^1.4.4"
 pillow = "^9.5.0"
 plotly = "5.12.0"
-prophet = "^1.1"
 pydot = "^1.4.2"
 pydotplus = "^2.0.2"
 pytesseract = "^0.3.10"
@@ -30,9 +28,12 @@ ua-parser = "^0.16.1"
 user_agents = "^2.2.0"
 wordcloud = "^1.9.1"
 xgboost = "^1.7.5"
+pingouin = "^0.5.4"
+prophet = "^1.1.5"
+ipykernel = "^6.29.4"
 
 [tool.poetry.dev-dependencies]
-black = {version = "^21.12b0", allow-prereleases = true}
+black = { version = "^21.12b0", allow-prereleases = true }
 fonttools = "^4.37.1"
 gdown = "^4.7.1"
 ghp-import = "^2.1.0"
