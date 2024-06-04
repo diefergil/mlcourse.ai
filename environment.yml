@@ -1,4 +1,4 @@
-name: mlcourse.ai
+name: mlcourse
 channels:
   - defaults
   - conda-forge
@@ -18,7 +18,7 @@ dependencies:
   - scipy=1.10.1
   - statsmodels=0.14.0
   - wordcloud=1.9.1
-  - xgboost=1.7.5
+  - pip
   - pip:
       - jupyter-book>=0.15.1
       - pydotplus>=2.0.2
@@ -38,3 +38,4 @@ dependencies:
       - pylint>=2.15.0
       - pyyaml>=6.0
       - sphinx-jupyterbook-latex>=0.5.2
+      - xgboost=1.7.5
