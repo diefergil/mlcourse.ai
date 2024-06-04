@@ -38,4 +38,4 @@ dependencies:
       - pylint>=2.15.0
       - pyyaml>=6.0
       - sphinx-jupyterbook-latex>=0.5.2
-      - xgboost=1.7.5
+      - xgboost==1.7.5
