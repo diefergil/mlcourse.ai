@@ -43,7 +43,8 @@
                         "path": "/workspaces/mlcourse.ai/.venv/bin/python",
                         "type": "pythonEnvironment"
                     }
-                ]
+                ],
+                "jupyter.defaultKernel": "mlcourse-ai"
             }
         }
     },
@@ -55,7 +56,7 @@
     "postCreateCommand": [
         "bash",
         "-c",
-        "export PATH=\"$HOME/.local/bin:$PATH\" && poetry config virtualenvs.in-project true && poetry install"
+        "export PATH=\"$HOME/.local/bin:$PATH\" && poetry config virtualenvs.in-project true && poetry install && poetry run python -m ipykernel install --user --name=mlcourse-ai --display-name='MLCourse.ai (Poetry)'"
     ],
     "postStartCommand": [
         "bash",
@@ -81,8 +82,5 @@
             "onAutoForward": "ignore"
         }
     },
-    "remoteUser": "vscode",
-    "mounts": [
-        "source=${localWorkspaceFolder}/.venv,target=/workspaces/mlcourse.ai/.venv,type=volume"
-    ]
+    "remoteUser": "vscode"
 }
